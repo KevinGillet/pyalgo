@@ -6,9 +6,10 @@ Calcul de rendu de monnaie
 """
 #Lecture du montant
 montant = 77.53
-print("Vous devez", montant, "€")
-somme = 100
-print("Montant donné :", somme, "€")
+print("*************************")
+print("* Vous devez", montant, "€    *")
+somme = 200
+print("* Montant donné :", somme, "€ *")
 #Calcul de la monnaie
 monnaie = somme - montant
 billet100 = monnaie // 100
@@ -31,38 +32,39 @@ piece20c = (rendu50c) // 20
 rendu20c = (rendu50c) % 20
 piece10c = (rendu20c) // 10
 rendu10c = (rendu20c) % 10
-piece5c = (rendu10c*100) // 5
-rendu5c = (rendu10c*100) % 5
-piece2c = (rendu5c*100) // 2
-rendu2c = (rendu5c*100) % 2
-piece1c = (rendu2c*100) // 1
-rendu1c = (rendu2c*100) % 1
+piece5c = (rendu10c) // 5
+rendu5c = (rendu10c) % 5
+piece2c = (rendu5c) // 2
+rendu2c = (rendu5c) % 2
+piece1c = (rendu2c) // 1
+rendu1c = (rendu2c) % 1
 #Affichage du rendu
-print("Rendu :", monnaie, "€")
+print("* Rendu :", monnaie, "€      *")
+print("*************************\n")
 if billet100 != 0:
-    print(billet100, "x 100€")
+    print(int(billet100), "x 100€")
 if billet50 != 0:
-    print(billet50, "x 50€")
+    print(int(billet50), "x 50€")
 if billet20 != 0:
-    print(billet20, "x 20€") 
+    print(int(billet20), "x 20€") 
 if billet10 != 0:
-    print(billet10, "x 10€") 
+    print(int(billet10), "x 10€") 
 if billet5 != 0:
-    print(billet5,"x 5€") 
+    print(int(billet5),"x 5€") 
 if piece2 != 0:
-    print(piece2, "x 2€") 
+    print(int(piece2), "x 2€") 
 if piece1 != 0:
-    print(piece1, "x 1€") 
+    print(int(piece1), "x 1€") 
 if piece50c != 0:
-    print(piece50c, "x 50c") 
+    print(int(piece50c), "x 50c") 
 if piece20c != 0:
-    print(piece20c, "x 20c") 
+    print(int(piece20c), "x 20c") 
 if piece10c != 0:
-    print(piece10c, "x 10c") 
+    print(int(piece10c), "x 10c") 
 if piece5c != 0:
-    print(piece5c, "x 5c") 
+    print(int(piece5c), "x 5c") 
 if piece2c != 0:
-    print(piece2c, "x 2c") 
+    print(int(piece2c), "x 2c") 
 if piece1c != 0:
-    print(piece1c, "x 1c") 
+    print(int(piece1c), "x 1c") 
 #print(billet50, billet20, billet10, billet5, piece2, piece1)
