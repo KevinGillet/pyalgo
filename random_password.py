@@ -43,7 +43,7 @@ for i in range(nbPonct):
     passPonct.append(random.choice(listPonct))
 print(passPonct)
 for i in range(nbNum):
-    passNum.append(random.randint(0,9))
+    passNum.append(str(random.randint(0,9)))
 print(passNum)
 for i in range(nbMin):
     passMin.append((random.choice(string.ascii_letters)).lower())
@@ -56,7 +56,11 @@ passComplete = passMaj+passPonct+passNum+passMin
 print(passComplete)
 random.shuffle(passComplete)
 print(passComplete)
+
 passString = ""
 for i in range(len(passComplete)):
     passString = passString + str(passComplete[i])
+#OU BIEN
+#print("".join(passComplete))
+
 print("Your password:\n",passString)
